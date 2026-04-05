@@ -3,9 +3,11 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: var(--font-geist-sans);
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-    --font-mono: var(--font-geist-mono);
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
     --color-green-50: oklch(98.2% 0.018 155.826);
     --color-green-100: oklch(96.2% 0.044 156.743);
     --color-green-200: oklch(92.5% 0.084 155.995);
@@ -4101,6 +4103,20 @@
 :root {
   --background: #151311;
   --foreground: #dfbf78;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-obsidian: #151311;
+  --color-obsidian-light: #25221d;
+  --color-obsidian-card: #1f1d19;
+  --color-gold: #c19853;
+  --color-gold-light: #dfbf78;
+  --color-gold-dark: #866630;
+  --color-jewel-red: #c24141;
+  --color-jewel-green: #298c56;
+  --color-jewel-blue: #2a6cb8;
+  --color-jewel-purple: #8655b3;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 body {
   background: var(--background);
