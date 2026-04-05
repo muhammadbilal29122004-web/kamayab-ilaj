@@ -7,24 +7,24 @@ export default function Home() {
       {/* 1. Cinematic Hero Section */}
       <section className="relative min-h-screen flex flex-col items-center justify-center pt-32 px-4 bg-white overflow-hidden">
          {/* Very soft glow at top */}
-         <div className="absolute top-0 right-0 w-[40vw] h-[40vw] bg-blue-50 rounded-full blur-[100px] pointer-events-none" />
+         <div className="absolute top-0 right-0 w-[40vw] h-[40vw] bg-blue-50/50 rounded-full blur-[100px] pointer-events-none" />
          
          <div className="relative z-10 flex flex-col items-center text-center w-full max-w-5xl mx-auto">
             
-            <span className="text-blue-700 tracking-[0.4em] uppercase text-xs font-bold mb-8">
+            <span className="text-sky-500 tracking-[0.4em] uppercase text-xs font-bold mb-8">
                Bismillah Hir Rahman Nir Raheem
             </span>
             
-            <h1 className="text-7xl md:text-9xl lg:text-[10rem] font-serif font-medium text-blue-950 leading-[1] mb-6">
+            <h1 className="text-7xl md:text-9xl lg:text-[10rem] font-serif font-medium text-sky-800 leading-[1] mb-6">
               Kamayab
             </h1>
             
             <div className="flex items-center gap-4 mb-10">
-               <div className="w-16 md:w-32 h-[1px] bg-blue-200"></div>
-               <h2 className="text-xl md:text-3xl font-serif text-blue-800 tracking-[0.2em] uppercase">
+               <div className="w-16 md:w-32 h-[1px] bg-sky-100"></div>
+               <h2 className="text-xl md:text-3xl font-serif text-sky-600 tracking-[0.2em] uppercase">
                  Roohani Markaz
                </h2>
-               <div className="w-16 md:w-32 h-[1px] bg-blue-200"></div>
+               <div className="w-16 md:w-32 h-[1px] bg-sky-100"></div>
             </div>
             
             <p className="text-lg md:text-2xl text-slate-600 max-w-2xl leading-relaxed font-light mb-16">
@@ -33,7 +33,7 @@ export default function Home() {
             
             <div className="flex flex-col sm:flex-row items-center gap-6">
                <Link href="/contact">
-                 <button className="px-12 py-4 shadow-lg bg-blue-900 text-white text-sm uppercase tracking-[0.2em] font-medium hover:bg-blue-800 transition-colors">
+                 <button className="px-12 py-4 shadow-lg bg-sky-400 text-white text-sm uppercase tracking-[0.2em] font-medium hover:bg-sky-500 transition-colors">
                    Kaam Shuru Karein
                  </button>
                </Link>
@@ -41,16 +41,16 @@ export default function Home() {
          </div>
          
          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-50">
-            <span className="text-[10px] uppercase tracking-[0.2em] text-blue-900 font-bold">Scroll</span>
-            <div className="w-[1px] h-12 bg-blue-900" />
+            <span className="text-[10px] uppercase tracking-[0.2em] text-sky-700 font-bold">Scroll</span>
+            <div className="w-[1px] h-12 bg-sky-50" />
          </div>
       </section>
 
       {/* 2. Core Pillars */}
       <section className="py-32 px-4 max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-24 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-serif text-blue-900 font-bold drop-shadow-sm">Muntakhib Khidmaat</h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-blue-600 to-transparent mx-auto opacity-50" />
+          <h2 className="text-4xl md:text-5xl font-serif text-sky-700 font-bold drop-shadow-sm">Muntakhib Khidmaat</h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-sky-200 to-transparent mx-auto opacity-50" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -61,17 +61,17 @@ export default function Home() {
             { t: 'Istikhara', d: 'Mubarak Rahnumai', link: '/istikhara', imgSrc: '/istikhara.jpg' },
           ].map((p, i) => (
             <Link href={p.link} key={i}>
-              <div className="group relative h-[450px] rounded-3xl overflow-hidden cursor-pointer border border-blue-100 bg-white hover:-translate-y-2 transition-all duration-500 shadow-[0_15px_30px_rgba(59,130,246,0.05)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)]">
+              <div className="group relative h-[450px] rounded-3xl overflow-hidden cursor-pointer border border-white bg-white hover:-translate-y-2 transition-all duration-500 shadow-[0_15px_30px_rgba(59,130,246,0.05)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)]">
                 
                 {/* Local Image */}
                 <img src={p.imgSrc} alt={p.t} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-sky-100 via-blue-900/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
 
                 <div className="absolute inset-0 flex flex-col justify-end p-10 z-10 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 text-center">
                    <h3 className="text-4xl font-serif text-white mb-2 drop-shadow-md">{p.t}</h3>
-                   <p className="text-blue-300 uppercase tracking-[0.2em] text-sm font-bold opacity-80 group-hover:opacity-100 transition-opacity duration-500 drop-shadow-sm">{p.d}</p>
-                   <div className="w-16 h-[2px] bg-blue-400 mt-8 mx-auto transform scale-x-50 group-hover:scale-x-100 transition-transform duration-500 shadow-[0_0_10px_rgba(96,165,250,0.5)]" />
+                   <p className="text-sky-800 uppercase tracking-[0.2em] text-sm font-bold opacity-80 group-hover:opacity-100 transition-opacity duration-500 drop-shadow-sm">{p.d}</p>
+                   <div className="w-16 h-[2px] bg-sky-300 mt-8 mx-auto transform scale-x-50 group-hover:scale-x-100 transition-transform duration-500 shadow-[0_0_10px_rgba(96,165,250,0.5)]" />
                 </div>
               </div>
             </Link>
@@ -80,20 +80,20 @@ export default function Home() {
       </section>
 
       {/* 3. Premium Booking & Services */}
-      <section className="py-32 bg-blue-50/60 border-y border-blue-200/50 relative overflow-hidden">
+      <section className="py-32 bg-blue-50/50/60 border-y border-sky-100/50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.3] bg-[radial-gradient(circle_at_center,_#3b82f6_1px,_transparent_1px)] bg-[size:24px_24px]" />
 
         <div className="max-w-7xl mx-auto px-4 relative z-10 flex flex-col xl:flex-row gap-20 items-center justify-between">
 
           <div className="xl:w-1/3 space-y-10 text-center xl:text-left">
             <div className="space-y-4">
-              <h2 className="text-5xl md:text-7xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-900 font-bold leading-tight drop-shadow-sm">Khususi<br />Peshkash</h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-transparent mx-auto xl:mx-0 opacity-50" />
+              <h2 className="text-5xl md:text-7xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-sky-500 font-bold leading-tight drop-shadow-sm">Khususi<br />Peshkash</h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-sky-300 to-transparent mx-auto xl:mx-0 opacity-50" />
             </div>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light">
               Aapki zaati aur roohani zaroriat ke liye muntakhib karda khusoosi packages jinke asraat fori aur mustaqil hote hain.
             </p>
-            <button className="border-b-[2px] border-blue-600 pb-2 text-blue-700 uppercase tracking-[0.2em] font-bold hover:text-blue-900 transition-colors text-sm">
+            <button className="border-b-[2px] border-sky-300 pb-2 text-sky-500 uppercase tracking-[0.2em] font-bold hover:text-sky-700 transition-colors text-sm">
               Mukammal Details Dekhein →
             </button>
           </div>
@@ -105,18 +105,18 @@ export default function Home() {
               { title: 'Appointment', price: '30 Mins Walk-in', type: 'Session' },
               { title: 'Zaicha Form', price: '5,550 Rs', type: 'Numerology Report' },
             ].map((cat, i) => (
-              <div key={i} className="p-10 rounded-3xl border border-blue-200 bg-white group hover:-translate-y-3 hover:border-blue-400 hover:shadow-[0_20px_50px_rgba(59,130,246,0.15)] transition-all duration-500 flex flex-col gap-8 relative overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.03)]">
+              <div key={i} className="p-10 rounded-3xl border border-sky-100 bg-white group hover:-translate-y-3 hover:border-sky-200 hover:shadow-[0_20px_50px_rgba(59,130,246,0.15)] transition-all duration-500 flex flex-col gap-8 relative overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.03)]">
 
-                <div className="absolute -top-4 -right-4 p-6 opacity-[0.03] font-serif text-8xl group-hover:scale-110 group-hover:opacity-10 group-hover:text-blue-700 transition-all duration-700 text-slate-800 select-none">
+                <div className="absolute -top-4 -right-4 p-6 opacity-[0.03] font-serif text-8xl group-hover:scale-110 group-hover:opacity-10 group-hover:text-sky-500 transition-all duration-700 text-slate-800 select-none">
                   0{i + 1}
                 </div>
 
-                <span className="text-xs uppercase tracking-[0.25em] text-blue-600/80 font-bold border-b border-blue-100 pb-2 self-start">{cat.type}</span>
+                <span className="text-xs uppercase tracking-[0.25em] text-sky-500/80 font-bold border-b border-white pb-2 self-start">{cat.type}</span>
 
                 <div className="space-y-6 relative z-10">
-                  <h3 className="text-3xl font-serif text-slate-800 group-hover:text-blue-800 transition-colors duration-500 font-bold">{cat.title}</h3>
-                  <div className="inline-block px-5 py-3 rounded-full bg-blue-50 border border-blue-200 group-hover:bg-blue-100 transition-colors duration-500">
-                    <span className="text-blue-800 font-extrabold tracking-widest text-lg">{cat.price}</span>
+                  <h3 className="text-3xl font-serif text-slate-800 group-hover:text-sky-600 transition-colors duration-500 font-bold">{cat.title}</h3>
+                  <div className="inline-block px-5 py-3 rounded-full bg-blue-50/50 border border-sky-100 group-hover:bg-blue-50 transition-colors duration-500">
+                    <span className="text-sky-600 font-extrabold tracking-widest text-lg">{cat.price}</span>
                   </div>
                 </div>
               </div>
@@ -130,8 +130,8 @@ export default function Home() {
       <section className="py-24 bg-white relative z-10">
          <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-20 space-y-4">
-               <h2 className="text-4xl md:text-5xl font-serif text-blue-900 font-bold drop-shadow-sm">Kaam Ka Tariqa</h2>
-               <div className="w-24 h-1 bg-gradient-to-r from-transparent via-blue-600 to-transparent mx-auto opacity-50" />
+               <h2 className="text-4xl md:text-5xl font-serif text-sky-700 font-bold drop-shadow-sm">Kaam Ka Tariqa</h2>
+               <div className="w-24 h-1 bg-gradient-to-r from-transparent via-sky-200 to-transparent mx-auto opacity-50" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
@@ -141,10 +141,10 @@ export default function Home() {
                  { step: '03', title: 'Mubarak Hal', desc: 'Taveez, Naqsh ya Qurani wazaif aapko faraaham kiye jayenge taa ke apko fori sakoon mile.' },
                ].map((wk, i) => (
                  <div key={i} className="flex flex-col items-center gap-6 group">
-                   <div className="w-20 h-20 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-3xl font-serif font-bold text-blue-700 shadow-md group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
+                   <div className="w-20 h-20 rounded-full bg-blue-50/50 border border-sky-100 flex items-center justify-center text-3xl font-serif font-bold text-sky-500 shadow-md group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
                      {wk.step}
                    </div>
-                   <h3 className="text-2xl font-serif text-slate-800 group-hover:text-blue-800 transition-colors">{wk.title}</h3>
+                   <h3 className="text-2xl font-serif text-slate-800 group-hover:text-sky-600 transition-colors">{wk.title}</h3>
                    <p className="text-slate-600 leading-relaxed font-medium px-4">{wk.desc}</p>
                  </div>
                ))}
@@ -153,14 +153,14 @@ export default function Home() {
       </section>
 
       {/* 5. Khusoosiyat (Features) */}
-      <section className="py-24 bg-blue-900 text-white relative overflow-hidden">
+      <section className="py-24 bg-sky-400 text-white relative overflow-hidden">
          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_#60a5fa_1px,_transparent_1px)] bg-[size:30px_30px]" />
          
          <div className="max-w-7xl mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                <div className="space-y-8">
-                  <h2 className="text-4xl md:text-5xl font-serif font-bold text-blue-100">Hum Par Aitmaad Kyun Karein?</h2>
-                  <p className="text-lg text-blue-300 leading-relaxed font-light">
+                  <h2 className="text-4xl md:text-5xl font-serif font-bold text-sky-900">Hum Par Aitmaad Kyun Karein?</h2>
+                  <p className="text-lg text-sky-800 leading-relaxed font-light">
                      Kamayab Roohani Markaz hamesha Quran-e-Pak aur Sunnat ki roshni mein rehnumai karta hai, jahan har maslay ka mukammal shari'i aur roohani hal mojood hai.
                   </p>
                   
@@ -171,25 +171,25 @@ export default function Home() {
                        { title: 'Jald aur Mustaqil Asar', desc: 'Aise amaliyat jo waqti nahi balke hamesha ke liye asar chorte hain.' },
                      ].map((ft, i) => (
                         <div key={i} className="flex items-start gap-4">
-                           <div className="w-8 h-8 rounded-full bg-blue-800 border border-blue-500/50 flex items-center justify-center mt-1 shrink-0">
-                              <span className="w-2 h-2 rounded-full bg-blue-300" />
+                           <div className="w-8 h-8 rounded-full bg-sky-100 border border-sky-200 flex items-center justify-center mt-1 shrink-0">
+                              <span className="w-2 h-2 rounded-full bg-sky-200" />
                            </div>
                            <div>
                               <h4 className="text-xl font-bold font-serif text-white">{ft.title}</h4>
-                              <p className="text-blue-200/80 font-medium text-sm mt-1">{ft.desc}</p>
+                              <p className="text-sky-900/80 font-medium text-sm mt-1">{ft.desc}</p>
                            </div>
                         </div>
                      ))}
                   </div>
                </div>
                
-               <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-blue-700">
+               <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-sky-200">
                   <img src="/istikhara.jpg" alt="Features" className="absolute inset-0 w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-blue-950/60" />
+                  <div className="absolute inset-0 bg-sky-100/80" />
                   <div className="absolute inset-0 flex items-center justify-center flex-col text-center p-8">
-                     <span className="text-6xl text-blue-400 mb-4">✧</span>
+                     <span className="text-6xl text-sky-700 mb-4">✧</span>
                      <h3 className="text-3xl font-serif font-bold text-white mb-2 drop-shadow-md">Rab ka Fazal</h3>
-                     <p className="text-blue-200 uppercase tracking-widest text-sm font-semibold drop-shadow-sm">Har mushkil aasaan hai, bas roohaniyat pe thik se amal ho.</p>
+                     <p className="text-sky-900 uppercase tracking-widest text-sm font-semibold drop-shadow-sm">Har mushkil aasaan hai, bas roohaniyat pe thik se amal ho.</p>
                   </div>
                </div>
             </div>
