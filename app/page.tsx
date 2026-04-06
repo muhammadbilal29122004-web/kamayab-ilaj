@@ -14,7 +14,7 @@ export default function Home() {
           playsInline 
           className="absolute inset-0 w-full h-full object-cover object-center opacity-35 pointer-events-none"
         >
-          <source src="/surah vedio hero.mp4" type="video/mp4" />
+          <source src="/home page hero vedio.mp4" type="video/mp4" />
         </video>
         
         {/* Soft Overlays for depth */}
